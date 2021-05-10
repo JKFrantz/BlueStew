@@ -2,9 +2,9 @@
 
 You want a directory structure like this:
 
-BlueStew/
-BlueStew/Input
-BlueStew/Input/Input_Decks
+|BlueStew/
+|BlueStew/Input
+|BlueStew/Input/Input_Decks
 
 place mtg.py, generator_setup.py, and generator.py in BlueStew, unzip blue_stew_decks.zip in Input/Input_Decks, and put everything else in BlueStew/Input
 
