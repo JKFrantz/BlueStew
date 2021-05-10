@@ -12,8 +12,9 @@ place mtg.py, generator_setup.py, and generator.py in BlueStew/, unzip blue_stew
 
 If you open a terminal in the BlueStew directory and start a python3 session, you should be able to generate a deck by typing
 
-  import generator
-  the_deck = generator.make(debug=True)
+import generator
+
+the_deck = generator.make(debug=True)
 
 which will show you the generated deck along with various things used in the debugging process.
 
