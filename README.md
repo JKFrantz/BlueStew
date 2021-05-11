@@ -1,6 +1,6 @@
 # BlueStew
 
-To run generate decks with Blue Stew, the appropriate directory structure is like this:
+To generate decks with Blue Stew, the appropriate directory structure is like this:
 
 |BlueStew/
 
