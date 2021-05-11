@@ -1,11 +1,9 @@
-import csv
 import glob
 import os
 import numpy
 import scrython
 import pandas as pd
 import time
-import math
 from collections import defaultdict
 
 class Card:
@@ -94,18 +92,11 @@ class Deck:
 
         return formatted_list
 
-    def save(self, formatted_path, mtgo_path, formatted = True, mtgo = True):
-        formatted_list, mtgo_list = display_lists()
-        d = {
-            formatted: {'list': formatted_list, 'path': formatted_path},
-            mtgo: {'list': mtgo_list, 'path': mtgo_path},
-        }
-        for val in d:
-            if val:
-                f = open(f"{d[val]['path']}.txt", "w")
-                for val2 in d[val]['list']:
-                    f.write(val2)
-                f.close()
+    def save(self, list, path):
+        f = open(f"{path}.txt", "w")
+        for line in list:
+            f.write(line)
+        f.close()
 
     def add(self, newcard, mb_or_sb, number = 1):
         if ('Land' not in newcard.get('type_line')) and (mb_or_sb == 'mb'):
@@ -186,7 +177,6 @@ class Synergy_Group:
                         in_color = False
             if in_color:
                 for val2 in range(0, a):
-                    print(f"adding {card.get('name')}")
                     deck.add(card, 'mb')
                 m = val[1] % 1
                 if m > 0:
