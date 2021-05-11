@@ -4,9 +4,9 @@ You want a directory structure like this:
 
 |BlueStew/
 
-|BlueStew/Input
+|BlueStew/Input/
 
-|BlueStew/Input/Input_Decks
+|BlueStew/Input/Input_Decks/
 
 place mtg.py, generator_setup.py, and generator.py in BlueStew/, unzip blue_stew_decks.zip in Input/Input_Decks/, and put the Synergy_Groups, spinner, and master_list csv's in BlueStew/Input/
 
